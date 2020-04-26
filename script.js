@@ -1,8 +1,9 @@
+
 /* All screens
 boiler plate code
 */
 
-
+/*
 const readline = require('readline');
 const readlineInterface = readline.createInterface(process.stdin, process.stdout);
 
@@ -11,6 +12,7 @@ function ask(questionText) {
     readlineInterface.question(questionText, resolve);
   });
 }
+*/
 
 /* The screen order
 start --> teamName
@@ -61,3 +63,9 @@ maybe a balloon animation feature eventually
 /*betterLuckNextTime
 maybe an animation eventually
 */
+
+function startGame(){
+  var teamName = document.forms["start-game"]["team-name"].value;
+  var sideOfCar=document.forms["start-game"]["side-of-car"].value;
+  alert("Your team name is "+ teamName + ". You are on the " + sideOfCar + " side of the car.");
+}
